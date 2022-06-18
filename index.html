@@ -18,7 +18,7 @@
             <h1 class="profile__name">Жак-Ив Кусто</h1>
             <p class="profile__bio">Исследователь океана</p>
         </div>
-        <button type="button" class="profile__edit-button"></button>
+        <button onclick="openEditForm()" type="button" class="profile__edit-button"></button>
         <button type="button" class="profile__add-button"><img src="./images/add.svg" alt="Добавить"></button>
       </section>
       <section class="elements">
@@ -75,9 +75,9 @@
     <footer class="footer">
       <p class="footer__copyright">© 2022 Mesto Russia</p>
     </footer>
-    <div class="edit-form edit-form_opened">
+    <div id="edit-form" class="edit-form">
       <div class="edit-form__container">
-        <button class="edit-form__close-btn"><img src="./images/close-icon.svg" alt="Закрыть кнопка"></button>
+        <button onclick="clodeEditForm()" class="edit-form__close-btn"><img src="./images/close-icon.svg" alt="Закрыть кнопка"></button>
         <h3 class="edit-form__title">Редактировать профиль</h3>
           <form action="" class="edit-form__inputs">
             <input class="edit-form__input" type="text" placeholder="Имя">
@@ -88,4 +88,5 @@
 
     </div>
 </body>
+<script src="./pages/sctipt.js"></script>
 </html>
